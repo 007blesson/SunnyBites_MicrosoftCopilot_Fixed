@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunnyBites Restaurant</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header styles */
+        header {
+            background-image: url('warm_background.jpg'); /* Replace with your warm background image */
+            background-size: cover;
+            text-align: center;
+            padding: 2rem;
+            color: #fff;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        /* Body styles */
+        .dish {
+            display: inline-block;
+            margin: 1rem;
+            position: relative;
+        }
+
+        .dish img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .dish:hover img {
+            transform: scale(1.1);
+        }
+
+        .dish .description {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.8);
+            padding: 1rem;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .dish:hover .description {
+            display: block;
+        }
+
+        /* Testimonials styles */
+        .testimonials {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .testimonial {
+            margin: 1rem;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            background: #f9f9f9;
+            padding: 1rem;
+        }
+
+        .social-icons {
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            margin: 0 0.5rem;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SunnyBites</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="menu">
+        <!-- Dish images and descriptions go here -->
+        <div class="dish">
+            <img src="dish1.jpg" alt="Delicious Dish 1">
+            <div class="description">
+                <h3>Spicy Shrimp Tacos</h3>
+                <p>Grilled shrimp, avocado, and tangy slaw. $12.99</p>
+            </div>
+        </div>
+        <!-- Repeat for other dishes -->
+    </section>
+
+    <section class="testimonials">
+        <div class="testimonial">
+            <img src="customer1.jpg" alt="Customer 1">
+            <p>"The best food I've ever had!"</p>
+        </div>
+        <!-- Repeat for other testimonials -->
+    </section>
+
+    <footer>
+        <p>© 2024 SunnyBites Restaurant</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <!-- Add more social icons as needed -->
+        </div>
+    </footer>
+</body>
+</html>
